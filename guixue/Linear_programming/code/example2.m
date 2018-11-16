@@ -15,8 +15,8 @@ while(1.1-a)>1
    b = a * ones(5, 1); 
    vlb=[0,0,0,0,0];vub=[];
    [x,val]=linprog(c, A, b, Aeq, beq, vlb);
-   x = x';
-   z = -val;
+   x = x'
+   z = -val
    plot(a,z,'.'),axis([0 0.1 0 0.5])
    hold on
    a=a+0.001;
