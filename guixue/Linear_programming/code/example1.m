@@ -5,5 +5,5 @@ b = [-10; 12];
 Aeq = ones(1,3);
 beq = 7;
 lb = zeros(3,1); %下界是列向量
-[x, fval] = linprog(C, a, b, Aeq, Beq, lb);
+[x, fval] = linprog(C, A, b, Aeq, Beq, lb);
 %注意得到的是最小的-z
